@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="title_page">إنجازاتي | ABOODY</title>
+    <meta name="description" content="ABDULRAHMAN (ABOODY) - Achievements, projects, games and tools.">
+    <link rel="icon" href="https://aboodyprojects.netlify.app/first_logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="custom-cursor"></div>
+    <div id="mouse-glow-star"></div>
+    <canvas id="particle-canvas"></canvas>
+    <div id="celestial-body"></div>
+    <div id="notification-bar"></div>
+    <div id="scroll-progress"></div>
+
+    <!-- ============ HEADER ============ -->
+    <header id="header">
+        <a href="#home" class="logo-container">
+            <img src="https://aboodyprojects.netlify.app/first_logo.png" alt="logo" id="site-logo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+            <span class="logo-text" style="display:none">ABOODY</span>
+        </a>
+
+        <nav id="main-nav">
+            <a href="#home" data-key="nav_home">الرئيسية</a>
+            <a href="#achievements" data-key="nav_achievements">إنجازاتي</a>
+            <a href="#ghost-radar" data-key="nav_radar">Ghost Radar</a>
+            <a href="#lab" data-key="nav_lab">المختبر</a>
+            <a href="#projects" data-key="nav_projects">مشاريعي</a>
+            <a href="#skills" data-key="nav_skills">مهاراتي</a>
+            <a href="#journey" data-key="nav_journey">رحلتي</a>
+            <a href="#contact" data-key="nav_contact">تواصل</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="mode-toggle" aria-label="Toggle dark mode">🌙</button>
+            <button id="lang-toggle">EN</button>
+            <button id="hamburger-btn" aria-label="Menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ HERO ============ -->
+        <section id="home" class="hero">
+            <div class="hero-badge reveal" data-key="hero_badge">👋 مطوّر ألعاب • مواقع • أدوات أمن معلومات</div>
+            <h1 class="reveal">
+                <span data-key="hero_hi">أنا</span>
+                <span class="gradient-text">ABDULRAHMAN</span>
+            </h1>
+            <p class="hero-typed reveal"><span id="typed"></span><span class="caret"></span></p>
+            <p class="hero-desc reveal" data-key="hero_desc">
+                أحوّل الأفكار إلى مشاريع حقيقية — من ألعاب تفاعلية، إلى مواقع ويب متجاوبة، وصولاً إلى أدوات فحص شبكات احترافية مكتوبة بلغة Python.
+            </p>
+            <div class="hero-buttons reveal">
+                <a href="#achievements" class="btn btn-primary" data-key="hero_cta1">استكشف إنجازاتي</a>
+                <a href="#ghost-radar" class="btn btn-ghost" data-key="hero_cta2">👻 Ghost Radar</a>
+            </div>
+
+            <div class="stats reveal">
+                <div class="stat"><span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+                    <p data-key="stat_projects">مشاريع منجزة</p>
+                </div>
+                <div class="stat"><span class="stat-num" data-target="2">0</span>
+                    <p data-key="stat_games">ألعاب منشورة</p>
+                </div>
+                <div class="stat"><span class="stat-num" data-target="3">0</span>
+                    <p data-key="stat_langs">لغات مدعومة في أدواتي</p>
+                </div>
+                <div class="stat"><span class="stat-num" data-target="256">0</span>
+                    <p data-key="stat_aes">بت تشفير AES</p>
+                </div>
+            </div>
+            <a href="#achievements" class="scroll-down" aria-label="scroll"><span></span></a>
+        </section>
+
+        <!-- ============ ACHIEVEMENTS ============ -->
+        <section id="achievements" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag" data-key="ach_tag">الإنجازات</span>
+                <h2 data-key="ach_title">أبرز ما أنجزته</h2>
+                <p data-key="ach_sub">محطات أفتخر بها في رحلتي البرمجية.</p>
+            </div>
+            <div class="ach-grid">
+                <div class="ach-card reveal">
+                    <div class="ach-icon">👻</div>
+                    <h3 data-key="ach1_t">أداة Ghost Radar V5.0</h3>
+                    <p data-key="ach1_d">بناء أداة استطلاع وفحص شبكات متكاملة ببنية معيارية وتشفير AES-256-GCM.</p>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🎮</div>
+                    <h3 data-key="ach2_t">نشر ألعاب للكمبيوتر والهاتف</h3>
+                    <p data-key="ach2_d">تطوير لعبة المتاهة "Try Again" ونشرها بنسختين: Windows و Android.</p>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🌐</div>
+                    <h3 data-key="ach3_t">مواقع ويب متجاوبة</h3>
+                    <p data-key="ach3_d">تصميم متجر إلكتروني، مدونة تقنية، وموقع ديني منشور على الإنترنت.</p>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🌍</div>
+                    <h3 data-key="ach4_t">دعم تعدد اللغات</h3>
+                    <p data-key="ach4_d">دعم العربية والإنجليزية والتركية حتى داخل التيرمنال مع اتجاه RTL سليم.</p>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">✅</div>
+                    <h3 data-key="ach5_t">جودة واختبارات CI</h3>
+                    <p data-key="ach5_d">اختبارات آلية باستخدام pytest وتكامل مستمر عبر GitHub Actions.</p>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🚀</div>
+                    <h3 data-key="ach6_t">موقع أعمال شخصي</h3>
+                    <p data-key="ach6_d">موقع بوضع ليلي/نهاري، جزيئات متحركة، وتبديل لغة فوري — منشور على Netlify.</p>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">👁️</div>
+                    <h3 data-key="ach7_t">أداة VOID EYE</h3>
+                    <p data-key="ach7_d">محلّل حزم شبكة (Mini Wireshark) يلتقط TCP و UDP و ICMP لحظياً ويحوّل عناوين IP إلى أسماء مواقع.</p>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🚪</div>
+                    <h3 data-key="ach8_t">الباب الذكي ESP32</h3>
+                    <p data-key="ach8_d">نظام تحكم بالدخول عبر رمز سري أو بطاقة RFID مع مؤشرات LED وتنبيهات صوتية.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ GHOST RADAR ============ -->
+        <section id="ghost-radar" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag" data-key="gr_tag">المشروع المميّز</span>
+                <h2>Ghost Radar <span class="version">V5.0</span></h2>
+                <p data-key="gr_sub">أداة فحص شبكات واستطلاع متقدمة وسريعة مبنية بـ Python، تجمع بين البنية المعيارية والتشفير القوي ووضع التخفي.</p>
+            </div>
+
+            <div class="radar-wrap">
+                <div class="terminal reveal">
+                    <div class="terminal-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <span class="terminal-title">ghost_radar — python main.py</span>
+                    </div>
+                    <pre class="terminal-body" id="terminal-body" dir="ltr"></pre>
+                </div>
+
+                <div class="radar-visual reveal">
+                    <div class="radar">
+                        <div class="radar-sweep"></div>
+                        <div class="radar-ring r1"></div>
+                        <div class="radar-ring r2"></div>
+                        <div class="radar-ring r3"></div>
+                        <span class="blip b1"></span><span class="blip b2"></span><span class="blip b3"></span><span class="blip b4"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature reveal">
+                    <span class="f-icon">📡</span>
+                    <h4 data-key="f1_t">فحص الشبكة المحلية (ARP)</h4>
+                    <p data-key="f1_d">اكتشاف الأجهزة، عناوين MAC، الشركات المصنّعة، وتخمين نظام التشغيل عبر بصمة TTL مع تنبيه فوري للأجهزة الجديدة.</p>
+                </div>
+                <div class="feature reveal">
+                    <span class="f-icon">🔍</span>
+                    <h4 data-key="f2_t">استطلاع المواقع (Web Recon)</h4>
+                    <p data-key="f2_d">الموقع الجغرافي، مزود الخدمة، شهادات SSL/TLS، الترويسات الأمنية، سجلات DNS عبر DoH، والنطاقات الفرعية.</p>
+                </div>
+                <div class="feature reveal">
+                    <span class="f-icon">🛡️</span>
+                    <h4 data-key="f3_t">فحص المنافذ والثغرات</h4>
+                    <p data-key="f3_d">مسح SYN، جلب بصمات الخدمات (Banner Grabbing)، والتحقق التلقائي من الثغرات عبر قاعدة NVD الرسمية.</p>
+                </div>
+                <div class="feature reveal">
+                    <span class="f-icon">🔐</span>
+                    <h4 data-key="f4_t">خزنة AES-256-GCM</h4>
+                    <p data-key="f4_d">تشفير تلقائي للسجلات والتقارير JSON/HTML مع أداة فك تشفير (Unseal) داخل البرنامج والمتصفح.</p>
+                </div>
+                <div class="feature reveal">
+                    <span class="f-icon">👤</span>
+                    <h4 data-key="f5_t">وضع الشبح (Ghost Mode)</h4>
+                    <p data-key="f5_d">تغيير توقيت الطلبات وإخفاء اسم العملية محلياً، مع دعم البروكسي و Tor عبر متغيرات البيئة.</p>
+                </div>
+                <div class="feature reveal">
+                    <span class="f-icon">🌐</span>
+                    <h4 data-key="f6_t">عربي / English / Türkçe</h4>
+                    <p data-key="f6_d">عرض سليم للعربية في التيرمنال من اليمين لليسار مع تبديل فوري بين ثلاث لغات.</p>
+                </div>
+            </div>
+
+            <div class="arch reveal">
+                <h3 data-key="arch_title">البنية المعيارية للمشروع</h3>
+                <div class="arch-grid" dir="ltr">
+                    <div class="module"><b>scanners/</b><small>local_network · port_scanner · web_recon</small></div>
+                    <div class="module"><b>security/</b><small>egress · validators · vault</small></div>
+                    <div class="module"><b>stealth/</b><small>mode · network_stealth</small></div>
+                    <div class="module"><b>storage/</b><small>history · reporter</small></div>
+                    <div class="module"><b>i18n/</b><small>defaults · translator</small></div>
+                    <div class="module core"><b>main.py</b><small>interactive menu · core</small></div>
+                </div>
+                <div class="tech-tags" dir="ltr">
+                    <span>Python</span><span>Scapy</span><span>AES-256-GCM</span><span>HMAC</span><span>DNS over HTTPS</span>
+                    <span>NVD CVE</span><span>pytest</span><span>GitHub Actions</span><span>arabic_reshaper</span>
+                </div>
+                <p class="disclaimer" data-key="gr_disc">⚠️ مصمّمة للأغراض التعليمية واختبار الاختراق الأخلاقي على الأنظمة المصرّح بها فقط.</p>
+            </div>
+        </section>
+
+        <!-- ============ LAB: VOID EYE + SMART DOOR ============ -->
+        <section id="lab" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag" data-key="lab_tag">المختبر</span>
+                <h2 data-key="lab_title">أدوات الشبكات وإنترنت الأشياء</h2>
+                <p data-key="lab_sub">مشروعان من مستودعي على GitHub — جرّبهما مباشرة هنا!</p>
+            </div>
+
+            <div class="lab-grid">
+                <!-- VOID EYE -->
+                <article class="lab-card reveal">
+                    <div class="lab-head">
+                        <span class="lab-icon">👁️</span>
+                        <div>
+                            <h3>VOID EYE</h3>
+                            <small dir="ltr">MINI WIRESHARK — FROM ABOODY</small>
+                        </div>
+                        <span class="live-badge"><i></i> LIVE</span>
+                    </div>
+                    <div class="terminal mini">
+                        <div class="terminal-bar">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="terminal-title">sudo python3 void_eye.py</span>
+                        </div>
+                        <pre class="terminal-body" id="void-body" dir="ltr"></pre>
+                        <div class="void-stats" dir="ltr">
+                            <span>Packets: <b id="v-total">0</b></span>
+                            <span class="tcp">TCP <b id="v-tcp">0</b></span>
+                            <span class="udp">UDP <b id="v-udp">0</b></span>
+                            <span class="icmp">ICMP <b id="v-icmp">0</b></span>
+                        </div>
+                    </div>
+                    <p data-key="ve_desc">أداة لمراقبة وتحليل حزم الشبكة تعترض الحزم المارة عبر كرت الشبكة وتعرض المصدر والوجهة، مع التعرف التلقائي على أسماء المواقع والخدمات عبر نظام Resolver ذكي.</p>
+                    <ul class="lab-list">
+                        <li data-key="ve_f1">📡 التقاط حي لحزم TCP و UDP و ICMP</li>
+                        <li data-key="ve_f2">🧠 تحويل IP إلى أسماء مواقع مع ذاكرة Cache</li>
+                        <li data-key="ve_f3">🔌 اختيار تفاعلي لكرت الشبكة</li>
+                        <li data-key="ve_f4">🇸🇦 دعم كامل للعربية داخل التيرمنال</li>
+                    </ul>
+                    <div class="tech-tags" dir="ltr"><span>Python</span><span>Scapy</span><span>Resolver Cache</span><span>python-bidi</span></div>
+                    <a href="https://github.com/ABOODY97/Void-eye" target="_blank" class="btn btn-ghost gh-btn">
+                        <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        <span data-key="gh_view">عرض على GitHub</span>
+                    </a>
+                </article>
+
+                <!-- SMART DOOR -->
+                <article class="lab-card reveal">
+                    <div class="lab-head">
+                        <span class="lab-icon">🚪</span>
+                        <div>
+                            <h3>Smart Door</h3>
+                            <small dir="ltr">ESP32 SMART DOOR ACCESS</small>
+                        </div>
+                        <span class="live-badge demo" data-key="demo_badge">جرّبها</span>
+                    </div>
+
+                    <div class="door-device" dir="ltr">
+                        <div class="door-top">
+                            <div class="leds">
+                                <span class="led white on" id="led-white" title="Ready"></span>
+                                <span class="led green" id="led-green" title="Granted"></span>
+                                <span class="led red" id="led-red" title="Denied"></span>
+                            </div>
+                            <div class="door-screen" id="door-screen">READY_</div>
+                        </div>
+                        <div class="door-body">
+                            <div class="keypad" id="keypad">
+                                <button>1</button><button>2</button><button>3</button><button class="k-letter">A</button>
+                                <button>4</button><button>5</button><button>6</button><button class="k-letter">B</button>
+                                <button>7</button><button>8</button><button>9</button><button class="k-letter">C</button>
+                                <button class="k-fn">*</button><button>0</button><button class="k-fn">#</button><button class="k-letter">D</button>
+                            </div>
+                            <button class="rfid" id="rfid-btn" aria-label="RFID">
+                                <span class="rfid-waves"></span>
+                                <span class="rfid-label">RFID<br>RC522</span>
+                            </button>
+                        </div>
+                        <div class="cards-row">
+                            <button class="rfid-card ok" data-uid="A3 F1 9C 2E" draggable="false">💳 <span data-key="card_ok">بطاقة صحيحة</span></button>
+                            <button class="rfid-card bad" data-uid="7B 00 4D 11" draggable="false">💳 <span data-key="card_bad">بطاقة غريبة</span></button>
+                        </div>
+                    </div>
+                    <p class="door-hint" data-key="door_hint">💡 أدخل الرمز التجريبي 1234 ثم اضغط # — أو اختر بطاقة ومرّرها على القارئ. (* للمسح)</p>
+
+                    <p data-key="sd_desc">مشروع أمان متكامل للتحكم في الدخول باستخدام متحكم ESP32، يعتمد على إدخال رمز سري عبر لوحة مفاتيح 4x4 أو تمرير بطاقة ذكية RFID.</p>
+                    <ul class="lab-list">
+                        <li data-key="sd_f1">⚪ لمبة بيضاء: النظام جاهز</li>
+                        <li data-key="sd_f2">🟢 لمبة خضراء + نغمة صاعدة: تم فتح الباب</li>
+                        <li data-key="sd_f3">🔴 لمبة حمراء + نغمة منخفضة: دخول مرفوض</li>
+                        <li data-key="sd_f4">⏱️ مسح الإدخال تلقائياً بعد 10 ثوانٍ</li>
+                    </ul>
+                    <div class="tech-tags" dir="ltr"><span>ESP32</span><span>C++ / Arduino</span><span>RFID RC522</span><span>Keypad 4x4</span><span>Buzzer</span><span>LEDs</span></div>
+                    <a href="https://github.com/ABOODY97/Smart_Door" target="_blank" class="btn btn-ghost gh-btn">
+                        <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                        <span data-key="gh_view">عرض على GitHub</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag" data-key="pr_tag">أعمالي</span>
+                <h2 data-key="pr_title">الألعاب ومشاريع الويب</h2>
+                <p data-key="pr_sub">مجموعة من الألعاب والمواقع التي قمت بتصميمها وتطويرها.</p>
+            </div>
+
+            <div class="filters reveal">
+                <button class="filter active" data-filter="all" data-key="flt_all">الكل</button>
+                <button class="filter" data-filter="game" data-key="flt_games">ألعاب</button>
+                <button class="filter" data-filter="web" data-key="flt_web">مواقع</button>
+                <button class="filter" data-filter="tool" data-key="flt_tools">أدوات و IoT</button>
+            </div>
+
+            <div class="games-container">
+                <div class="game-box reveal" data-cat="game">
+                    <div class="img-wrap"><img src="https://aboodyprojects.netlify.app/game%201.png" alt="Try Again" loading="lazy" onerror="this.parentElement.classList.add('noimg')"><span class="img-fallback">🧩</span></div>
+                    <span class="chip" data-key="chip_game">لعبة</span>
+                    <h3 data-key="p1_t">لعبة المتاهة — Try Again</h3>
+                    <p data-key="p1_d">اختبر مهاراتك في السرعة والتركيز. متوفرة للكمبيوتر والهاتف.</p>
+                    <div class="like-button"><button aria-label="like">❤️</button><span class="like-count" data-id="maze">0</span></div>
+                    <a href="downloads/TRY AGAIN.zip" download="TRY AGAIN.zip" id="try-again-dl" class="game-link dl-link">
+                        <span class="dl-ico">⬇</span> <span id="try-again-label" data-key="link_dl_pc">حمّل اللعبة (نسخة الكمبيوتر)</span>
+                    </a>
+                    <small class="dl-size" id="try-again-size">ZIP • 45.6 MB</small>
+                </div>
+
+                <div class="game-box reveal" data-cat="game">
+                    <div class="img-wrap"><img src="https://aboodyprojects.netlify.app/3D%20SHOOTER.png" alt="3D Shooter" loading="lazy" onerror="this.parentElement.classList.add('noimg')"><span class="img-fallback">🎯</span></div>
+                    <span class="chip" data-key="chip_game">لعبة</span>
+                    <h3 data-key="p2_t">3D Shooter</h3>
+                    <p data-key="p2_d">لعبة تصويب ثلاثية الأبعاد — قريباً.</p>
+                    <div class="like-button"><button aria-label="like">❤️</button><span class="like-count" data-id="shooter">0</span></div>
+                    <a href="#" class="game-link disabled" data-key="link_soon">قريباً</a>
+                </div>
+
+                <div class="game-box reveal" data-cat="web">
+                    <div class="img-wrap"><img src="https://aboodyprojects.netlify.app/ff.avif" alt="Store" loading="lazy" onerror="this.parentElement.classList.add('noimg')"><span class="img-fallback">🛒</span></div>
+                    <span class="chip web" data-key="chip_web">موقع</span>
+                    <h3 data-key="p3_t">موقع متجر إلكتروني</h3>
+                    <p data-key="p3_d">متجر كامل متجاوب يركّز على تجربة المستخدم وسهولة التصفح.</p>
+                    <div class="like-button"><button aria-label="like">❤️</button><span class="like-count" data-id="store">0</span></div>
+                    <a href="https://aboodyprojects.netlify.app/ABOODY%20WEB.html" target="_blank" class="game-link" data-key="link_browse">تصفح الموقع</a>
+                </div>
+
+                <div class="game-box reveal" data-cat="web">
+                    <div class="img-wrap"><img src="https://aboodyprojects.netlify.app/skr.png" alt="Blog" loading="lazy" onerror="this.parentElement.classList.add('noimg')"><span class="img-fallback">📝</span></div>
+                    <span class="chip web" data-key="chip_web">موقع</span>
+                    <h3 data-key="p4_t">مدونة شخصية تقنية</h3>
+                    <p data-key="p4_d">منصة لعرض المقالات التقنية وآخر الأخبار في مجال البرمجة.</p>
+                    <div class="like-button"><button aria-label="like">❤️</button><span class="like-count" data-id="blog">0</span></div>
+                    <a href="https://aboodyprojects.netlify.app/suriye" target="_blank" class="game-link" data-key="link_browse">تصفح الموقع</a>
+                </div>
+
+                <div class="game-box reveal" data-cat="web">
+                    <div class="img-wrap"><img src="https://aboodyprojects.netlify.app/logo.png" alt="Salatuk" loading="lazy" onerror="this.parentElement.classList.add('noimg')"><span class="img-fallback">🕌</span></div>
+                    <span class="chip web" data-key="chip_web">موقع</span>
+                    <h3 data-key="p5_t">موقع ديني — صلاتك</h3>
+                    <p data-key="p5_d">يعرض المحتوى الديني والقرآن الكريم، وجارٍ تحويله إلى تطبيق.</p>
+                    <div class="like-button"><button aria-label="like">❤️</button><span class="like-count" data-id="salatuk">0</span></div>
+                    <a href="https://salatuk-web.onrender.com" target="_blank" class="game-link" data-key="link_browse">تصفح الموقع</a>
+                </div>
+
+                <div class="game-box reveal" data-cat="tool">
+                    <div class="img-wrap code-cover void-cover"><pre dir="ltr">[TCP] google.com  &gt;&gt; 192.168.1.5
+[UDP] 8.8.8.8     &gt;&gt; DNS
+[ICMP] Type: 8</pre><span class="cover-title">👁️ VOID EYE</span></div>
+                    <span class="chip tool" data-key="chip_tool">أداة</span>
+                    <h3>VOID EYE</h3>
+                    <p data-key="p6_d">محلّل حزم شبكة بسيط وقوي (Mini Wireshark) مكتوب بـ Python و Scapy.</p>
+                    <div class="like-button"><button aria-label="like">❤️</button><span class="like-count" data-id="voideye">0</span></div>
+                    <a href="https://github.com/ABOODY97/Void-eye" target="_blank" class="game-link" data-key="link_github">عرض الكود</a>
+                </div>
+
+                <div class="game-box reveal" data-cat="tool">
+                    <div class="img-wrap code-cover door-cover"><span class="cover-leds"><i></i><i></i><i></i></span><span class="cover-title">🚪 SMART DOOR</span></div>
+                    <span class="chip tool" data-key="chip_iot">IoT</span>
+                    <h3 data-key="p7_t">الباب الذكي — ESP32</h3>
+                    <p data-key="p7_d">تحكم بالدخول برمز سري أو بطاقة RFID مع لمبات LED وطنان صوتي.</p>
+                    <div class="like-button"><button aria-label="like">❤️</button><span class="like-count" data-id="smartdoor">0</span></div>
+                    <a href="https://github.com/ABOODY97/Smart_Door" target="_blank" class="game-link" data-key="link_github">عرض الكود</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag" data-key="sk_tag">المهارات</span>
+                <h2 data-key="sk_title">أدواتي وتقنياتي</h2>
+            </div>
+            <div class="skills-wrap">
+                <div class="skill reveal"><div class="skill-top"><span>Python</span><span class="pct">90%</span></div><div class="bar-bg"><div class="bar-fill" data-w="90"></div></div></div>
+                <div class="skill reveal"><div class="skill-top"><span>HTML & CSS</span><span class="pct">92%</span></div><div class="bar-bg"><div class="bar-fill" data-w="92"></div></div></div>
+                <div class="skill reveal"><div class="skill-top"><span>JavaScript</span><span class="pct">80%</span></div><div class="bar-bg"><div class="bar-fill" data-w="80"></div></div></div>
+                <div class="skill reveal"><div class="skill-top"><span data-key="sk_net">أمن الشبكات</span><span class="pct">85%</span></div><div class="bar-bg"><div class="bar-fill" data-w="85"></div></div></div>
+                <div class="skill reveal"><div class="skill-top"><span data-key="sk_game">تطوير الألعاب</span><span class="pct">78%</span></div><div class="bar-bg"><div class="bar-fill" data-w="78"></div></div></div>
+                <div class="skill reveal"><div class="skill-top"><span data-key="sk_crypto">التشفير</span><span class="pct">75%</span></div><div class="bar-bg"><div class="bar-fill" data-w="75"></div></div></div>
+            </div>
+        </section>
+
+        <!-- ============ JOURNEY ============ -->
+        <section id="journey" class="section">
+            <div class="section-head reveal">
+                <span class="section-tag" data-key="jr_tag">الرحلة</span>
+                <h2 data-key="jr_title">محطات رحلتي</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item reveal"><div class="tl-dot">🌐</div><div class="tl-card"><h4 data-key="tl1_t">البداية مع الويب</h4><p data-key="tl1_d">تعلّم HTML و CSS و JavaScript وبناء أولى المواقع المتجاوبة.</p></div></div>
+                <div class="tl-item reveal"><div class="tl-dot">🎮</div><div class="tl-card"><h4 data-key="tl2_t">عالم الألعاب</h4><p data-key="tl2_d">تطوير لعبة "Try Again" ونشرها على الكمبيوتر والهاتف.</p></div></div>
+                <div class="tl-item reveal"><div class="tl-dot">🕌</div><div class="tl-card"><h4 data-key="tl3_t">مشاريع منشورة</h4><p data-key="tl3_d">إطلاق المتجر الإلكتروني والمدونة وموقع "صلاتك" للجمهور.</p></div></div>
+                <div class="tl-item reveal"><div class="tl-dot">🔌</div><div class="tl-card"><h4 data-key="tl5_t">عالم الهاردوير و IoT</h4><p data-key="tl5_d">بناء نظام الباب الذكي بـ ESP32 مع RFID ولوحة مفاتيح.</p></div></div>
+                <div class="tl-item reveal"><div class="tl-dot">👁️</div><div class="tl-card"><h4 data-key="tl6_t">VOID EYE</h4><p data-key="tl6_d">تطوير محلّل حزم شبكة لفهم ما يجري داخل الشبكة لحظة بلحظة.</p></div></div>
+                <div class="tl-item reveal"><div class="tl-dot">👻</div><div class="tl-card"><h4 data-key="tl4_t">Ghost Radar V5.0</h4><p data-key="tl4_d">الانتقال إلى أمن المعلومات وبناء أداة فحص شبكات احترافية بـ Python.</p></div></div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section">
+            <div class="contact-card reveal">
+                <h2 data-key="ct_title">لنعمل معاً 🤝</h2>
+                <p data-key="ct_sub">لديك فكرة أو مشروع؟ أرسل لي رسالة وسأعود إليك قريباً.</p>
+                <form id="contact-form" novalidate>
+                    <input type="text" id="c-name" data-ph="ph_name" placeholder="اسمك">
+                    <input type="email" id="c-email" data-ph="ph_email" placeholder="بريدك الإلكتروني">
+                    <textarea id="c-msg" rows="4" data-ph="ph_msg" placeholder="رسالتك"></textarea>
+                    <button type="submit" class="btn btn-primary" data-key="ct_send">إرسال</button>
+                </form>
+                <a href="https://aboodyprojects.netlify.app/" target="_blank" class="site-link">aboodyprojects.netlify.app ↗</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by : <b>ABDULRAHMAN</b> — ABOODY</p>
+        <p data-key="footer_text">© 2026 جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <button id="to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
